@@ -9,6 +9,7 @@ List<Pessoa> hospedes = new List<Pessoa>();
 Pessoa p1 = new Pessoa(nome: "Hóspede 1");
 Pessoa p2 = new Pessoa(nome: "Hóspede 2");
 
+
 hospedes.Add(p1);
 hospedes.Add(p2);
 
@@ -22,4 +23,5 @@ reserva.CadastrarHospedes(hospedes);
 
 // Exibe a quantidade de hóspedes e o valor da diária
 Console.WriteLine($"Hóspedes: {reserva.ObterQuantidadeHospedes()}");
-Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria()}");
+Console.WriteLine($"Dias reservados {reserva.DiasReservados}");
+Console.WriteLine($"Valor diária: {reserva.CalcularValorDiaria():C}");
